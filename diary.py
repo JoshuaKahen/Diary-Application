@@ -53,9 +53,9 @@ class StartPage(tk.Frame):
             if len(list_of_entries) > 0:
                 placeholder = 0
 
-            controller.show_frame("PageOne")
+            controller.show_frame("ReviewPage")
 
-        start = Button(self, text="write", bg="cyan", command=lambda: controller.show_frame("PageTwo"))
+        start = Button(self, text="write", bg="cyan", command=lambda: controller.show_frame("WritingPage"))
         start.place(relx=0.5, rely=0.4, height=50, width=100, anchor=CENTER)
 
         finish = Button(self, text="review", bg="lime", command=lambda: go_to_review())
